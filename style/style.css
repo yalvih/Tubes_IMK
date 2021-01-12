@@ -10,9 +10,11 @@ body{
     background:#f9fbfc ;
 }
 
+/* SIDEBAR */
+
 .sidebar{
     position: fixed;
-    width: 200px;
+    width: 225px;
     height: 100%;
     background: #203961;
     padding: 30px 0;
@@ -45,4 +47,49 @@ body{
     color: #594f8d;
 }
 
+.content{
+    width: 100%;
+    margin-left: 200px;
+}
+.header, .content{
+    background: #fff;
+    color: #717171;
+
+}
+.header{
+    padding-left: 25px;
+}
+.info{
+    padding: 30px;
+}
+
+/* CAROUSEL */
+
+.carousel-container{
+	position: relative;
+	float: left;
+	margin: auto;
+	height: 500px;
+	overflow: hidden;
+    width: 100%;
+}
+
+/* PRODUCT */
+
+.titleproduct, .product{
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    text-align: center;
+}
+.itemproduct{
+    width:21%; 
+    float:left; 
+    box-shadow: 2px 2px 2px 2px #e1755e;
+    margin: 1%;
+}
+.imgitemproduct{
+    width:100%;
+    cursor: pointer;
+}
 /* color palete #f9fbfc #203961, #a2cdb8, #e1755e, #5d554b */

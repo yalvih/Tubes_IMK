@@ -1,3 +1,4 @@
+// Carousel
 var slideIndex = 0;
 showSlides();
 
@@ -17,3 +18,6 @@ function showSlides(){
     slideIndex++;
     setTimeout(showSlides,3000);
 }
+
+// FormLogin
+

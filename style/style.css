@@ -92,4 +92,82 @@ body{
     width:100%;
     cursor: pointer;
 }
+
+/* LOGIN */
+.account-page{
+    padding: 50px;
+    background: radial-gradient(#fff,#a2cdb8);
+    margin-left: 11%;
+    height: 500px;
+}
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 40px 0 rgba(0,0,0,0.5);
+    overflow: hidden;
+}
+.form-container span{
+    font-weight: bold;
+    padding: 0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+}
+.form-btn{
+    display: inline-block;
+    
+}
+.form-container form{
+    max-width: 300px;
+    padding: 0 20px;
+    position: absolute;
+    top: 100px;
+    transition: transform 1s;
+}
+form input{
+    width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px soild #ccc;
+}
+form .btn{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+form .btn:focus{
+    outline: none;
+}
+#LoginForm{
+    left: -300px;
+}
+#RegForm{
+    left: 0;
+}
+form a{
+    font-size: 12px;
+}
+#Indicator{
+    width: 100px;
+    height: 3px;
+    border: none;
+    background: #e1755e;
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+.btn{
+    padding: 5px;
+    background: #e1755e;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+}
+
 /* color palete #f9fbfc #203961, #a2cdb8, #e1755e, #5d554b */

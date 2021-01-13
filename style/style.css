@@ -8,6 +8,7 @@
 
 body{
     background:#f9fbfc ;
+    height: 100%;
 }
 
 /* SIDEBAR */
@@ -18,7 +19,7 @@ body{
     height: 100%;
     background: #203961;
     padding: 30px 0;
-    
+    float: left;
 }
 
 .sidebar h2{
@@ -96,9 +97,14 @@ body{
 /* LOGIN */
 .account-page{
     padding: 50px;
-    background: radial-gradient(#fff,#a2cdb8);
     margin-left: 11%;
-    height: 500px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10%;
+    min-width: 800px;
+    min-width: 800px;
 }
 .form-container{
     background: #fff;

@@ -18,7 +18,7 @@
 
 *{
     margin: 0;
-
+    padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
@@ -70,6 +70,8 @@ body{
     color: #594f8d;
 }
 
+/* Content */
+
 .content{
     width: 100%;
     margin-left: 200px;
@@ -84,7 +86,7 @@ body{
     padding-left: 25px;
 }
 .info{
-    padding: 30px;
+    padding: 35px;
 }
 
 /* CAROUSEL */
@@ -236,10 +238,10 @@ form .btn:focus{
     outline: none;
 }
 #LoginForm{
-    left: -300px;
+    left: 0px;
 }
 #RegForm{
-    left: 0;
+    left: -300px;
 }
 form a{
     font-size: 12px;
@@ -269,5 +271,44 @@ form a{
 }
 .cboxlabel{
     font-size: 12px; float: left; margin: 16.5px;
+}
+
+
+
+/* PRODUCT DETAIL */
+.single-product{
+    margin-top: 80px;
+
+}
+.single-product .col-2 img{
+    padding: 0;
+    
+}
+.single-product .col-2{
+    padding: 20px;
+    
+}
+.single-product h4{
+    margin: 20px;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid ;
+}
+input:focus{
+    outline: none;
+}
+.single-product{
+    margin-left: 250px;
+}
+.imgitemproduct{
+    
 }
 /* color palete #f9fbfc #203961, #a2cdb8, #e1755e, #5d554b */

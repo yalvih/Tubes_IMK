@@ -150,6 +150,8 @@ body{
     filter: brightness(40%);
 }
 
+
+
 /* PRODUCT */
 
 .titleproduct, .product{
@@ -180,8 +182,9 @@ body{
     cursor: pointer;
 }
 
-.product_detail{
-
+.image-content{
+    height: 310px;
+    width: 310px;
 }
 
 .w3-card{
@@ -322,10 +325,13 @@ form a{
 input:focus{
     outline: none;
 }
+
 .single-product{
     margin-left: 250px;
 }
+
 .imgitemproduct{
     
 }
+
 /* color palete #f9fbfc #203961, #a2cdb8, #e1755e, #5d554b */

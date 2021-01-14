@@ -16,18 +16,18 @@
 }
 
 @font-face{
-    font-family: "mons_";
-    src: url("../fonts/google_font_normal.ttf") format("truetype");
+    font-family: "mons_reg";
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
 }
 
 @font-face{
-    font-family: "google";
-    src: url("../fonts/google_font_normal.ttf") format("truetype");
+    font-family: "mons_med";
+    src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
 }
 
 @font-face{
-    font-family: "google";
-    src: url("../fonts/google_font_normal.ttf") format("truetype");
+    font-family: "mons_semibold";
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
 }
 
 

@@ -10,6 +10,10 @@
     src: url("../fonts/arcade.TTF") format("truetype");
 }
 
+@font-face{
+    font-family: "google";
+    src: url("../fonts/google_font_normal.ttf") format("truetype");
+}
 /* END OF FONT INITIALIZATION */
 
 *{
@@ -124,7 +128,7 @@ body{
     max-height: 100%;
     min-height: 100%;
     margin: 0 auto;
-    filter: brightness(15%);
+    filter: brightness(40%);
 }
 
 /* PRODUCT */
@@ -141,6 +145,7 @@ body{
 .title{
     font-family: "arcade1";
     padding: 30px;
+    padding-left: -30px;
     font-size: 50px;
 }
 
@@ -157,7 +162,19 @@ body{
 }
 
 .product_detail{
-    padding: 15px;
+
+}
+
+.w3-card{
+    height: 500px;
+    /* box-shadow: none; */
+}
+
+.product_detail_title{
+    font-family: "google";
+    font-size: 25px;
+    padding: 10px;
+    font-weight: bold;
 }
 
 /* LOGIN */

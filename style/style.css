@@ -313,11 +313,12 @@ form a{
 }
 .single-product input{
     width: 50px;
-    height: 40px;
+    height: 45px;
     padding-left: 10px;
     font-size: 20px;
     margin-right: 10px;
     border: 1px solid ;
+
 }
 input:focus{
     outline: none;
@@ -325,7 +326,20 @@ input:focus{
 .single-product{
     margin-left: 250px;
 }
-.imgitemproduct{
-    
+.row .w3-card{
+    height: 10%;
+}
+.single-img{
+    width: 30%; 
+    float: left; 
+    margin: 1%;
+    padding: 10px;
+}
+.row .btn{
+    margin: 1%;
+    padding: 10px;
+}
+.addcartcontainer{
+    height: 10%;
 }
 /* color palete #f9fbfc #203961, #a2cdb8, #e1755e, #5d554b */

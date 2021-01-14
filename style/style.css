@@ -72,9 +72,9 @@ body{
 .sidebar ul li{
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.07);
     border-top: 1px solid rgba(225, 225, 225, 0.07); */
-    padding: 17px;
-    font-family: "arcade1";
-    font-size: 18px;
+    padding: 20px;
+    font-family: "mons_reg";
+    font-size: 16px;
 }
 .sidebar ul li a{
     color: white;
@@ -270,6 +270,11 @@ form .btn:focus{
     left: 0px;
     font-family: "mons_reg";
 }
+
+#LoginForm {
+    left: 0px;
+    font-family: "mons_reg";
+}
 #RegForm{
     left: -300px;
     font-family: "mons_reg";
@@ -281,15 +286,18 @@ form a{
     width: 100px;
     height: 3px;
     border: none;
-    background: #e1755e;
+    background: #54aaeb;
     margin-top: 8px;
     transform: translateX(100px);
     transition: transform 1s;
 }
 .btn{
-    padding: 5px;
-    background: #e1755e;
+    padding: 15px;
+    background: #54aaeb;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    font-family: "mons_semibold";
+    color: white;
+    border-radius: 25px;
 }
 .forgotpass{
     float: left; padding: 10px; color: blue;

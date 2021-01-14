@@ -193,10 +193,15 @@ body{
 }
 
 .product_detail_title{
-    font-family: "google";
-    font-size: 25px;
+    font-family: "mons_med";
+    font-size: 22px;
     padding: 10px;
     font-weight: bold;
+}
+
+.product_detail_price{
+    font-family: "mons_reg";
+    font-size: 18px;
 }
 
 /* LOGIN */

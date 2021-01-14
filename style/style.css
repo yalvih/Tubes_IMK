@@ -14,6 +14,23 @@
     font-family: "google";
     src: url("../fonts/google_font_normal.ttf") format("truetype");
 }
+
+@font-face{
+    font-family: "mons_";
+    src: url("../fonts/google_font_normal.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "google";
+    src: url("../fonts/google_font_normal.ttf") format("truetype");
+}
+
+@font-face{
+    font-family: "google";
+    src: url("../fonts/google_font_normal.ttf") format("truetype");
+}
+
+
 /* END OF FONT INITIALIZATION */
 
 *{

@@ -13,7 +13,7 @@
         <div class="sidebar">
             <h2>AXOLOTL</h2>
             <ul>
-                <li><a href="login.html"><i class="fas fa-user"></i>LOGIN</a></li>
+                <li><a href="login.html"><i class="fas fa-user"></i>SIGN IN</a></li>
                 <li><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
                 <li><a href="catalog.html"><i class="fas fa-shopping-bag"></i>SHOP</a></li>
                 <li><a href="#"><i class="fas fa-trophy"></i>NEW ARRIVAL</a></li>
@@ -24,6 +24,9 @@
         </div>
         <div class="w3-container account-page">
             <div class="w3-container">
+
+                
+
                 <div class="row">
                     <div class="col-2">
                         <div class="form-container">
@@ -37,13 +40,20 @@
                                 <input type="text" placeholder="Username">
                                 <input type="password" placeholder="Password">
                                 <button type="submit" class="btn">Login</button>
-                                <a href="">Forgot password?</a>
+                                <a class="forgotpass" href="">Forgot password?</a>
                             </form>
 
                             <form id="RegForm">
                                 <input type="text" placeholder="Username">
                                 <input type="email " placeholder="Email">
                                 <input type="password" placeholder="Password">
+                                <div class="cboxcontainer">
+                                    <input type="checkbox" class="cbox">
+                                    <label class="cboxlabel" style="font-size: 12px; float: left; padding: 0; margin: 16.5px 10px;">
+                                        I agree to the Privacy Policy
+                                    </label><br>
+                                </div>
+                                
                                 <button type="submit" class="btn">Register</button>
                             </form>
 
@@ -55,7 +65,7 @@
             
         </div>
     </div>
-    <script >
+    <script>
         var LoginForm = document.getElementById("LoginForm");
         var RegForm = document.getElementById("RegForm");
         var Indicator = document.getElementById("Indicator");

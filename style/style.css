@@ -331,6 +331,7 @@ form a{
 
 
 /* PRODUCT DETAIL */
+/* PRODUCT DETAIL */
 .single-product{
     margin-top: 80px;
 
@@ -367,7 +368,16 @@ input:focus{
 .row .w3-card{
     height: 10%;
 }
-
+.single-img{
+    width: 30%; 
+    float: left; 
+    margin: 1%;
+    padding: 10px;
+}
+.row .btn{
+    margin: 1%;
+    padding: 10px;
+}
 
 /* MY CART */
 .cart_product{
@@ -386,15 +396,11 @@ input:focus{
 
 .cart_itemproduct{
     width: 21%; 
+
     float: left; 
     margin: 1%;
     padding: 10px;
 }
-.row .btn{
-    margin: 1%;
-    padding: 10px;
-}
-
 
 .cart_product .w3-card{
 

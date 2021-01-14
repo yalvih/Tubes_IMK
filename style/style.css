@@ -241,7 +241,7 @@ body{
 }
 .form-btn{
     display: inline-block;
-    
+    font-family: "mons_med";
 }
 .form-container form{
     max-width: 300px;
@@ -268,9 +268,11 @@ form .btn:focus{
 }
 #LoginForm{
     left: 0px;
+    font-family: "mons_reg";
 }
 #RegForm{
     left: -300px;
+    font-family: "mons_reg";
 }
 form a{
     font-size: 12px;

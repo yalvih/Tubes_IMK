@@ -46,6 +46,10 @@ body{
     height: 100%;
 }
 
+.login_background{
+    background-image: url("../img/carousel/6.jpg");
+}
+
 /* SIDEBAR */
 
 .sidebar{

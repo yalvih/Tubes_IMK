@@ -312,7 +312,7 @@ form a{
 
 }
 .single-product input{
-    width: 50px;
+    width: 55px;
     height: 45px;
     padding-left: 10px;
     font-size: 20px;
@@ -339,7 +339,5 @@ input:focus{
     margin: 1%;
     padding: 10px;
 }
-.addcartcontainer{
-    height: 10%;
-}
+
 /* color palete #f9fbfc #203961, #a2cdb8, #e1755e, #5d554b */

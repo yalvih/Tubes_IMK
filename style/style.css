@@ -46,6 +46,10 @@ body{
     height: 100%;
 }
 
+.login_background{
+    background-image: url("../img/carousel/6.jpg");
+}
+
 /* SIDEBAR */
 
 .sidebar{
@@ -68,9 +72,9 @@ body{
 .sidebar ul li{
     /* border-bottom: 1px solid rgba(0, 0, 0, 0.07);
     border-top: 1px solid rgba(225, 225, 225, 0.07); */
-    padding: 17px;
-    font-family: "arcade1";
-    font-size: 18px;
+    padding: 20px;
+    font-family: "mons_reg";
+    font-size: 16px;
 }
 .sidebar ul li a{
     color: white;
@@ -150,6 +154,8 @@ body{
     filter: brightness(40%);
 }
 
+
+
 /* PRODUCT */
 
 .titleproduct, .product{
@@ -180,8 +186,9 @@ body{
     cursor: pointer;
 }
 
-.product_detail{
-
+.image-content{
+    height: 310px;
+    width: 310px;
 }
 
 .w3-card{
@@ -190,10 +197,15 @@ body{
 }
 
 .product_detail_title{
-    font-family: "google";
-    font-size: 25px;
+    font-family: "mons_med";
+    font-size: 22px;
     padding: 10px;
     font-weight: bold;
+}
+
+.product_detail_price{
+    font-family: "mons_reg";
+    font-size: 18px;
 }
 
 /* LOGIN */
@@ -208,6 +220,7 @@ body{
     min-width: 800px;
     min-width: 800px;
 }
+
 .form-container{
     background: #fff;
     width: 300px;
@@ -219,6 +232,7 @@ body{
     box-shadow: 0 0 40px 0 rgba(0,0,0,0.5);
     overflow: hidden;
 }
+
 .form-container span{
     font-weight: bold;
     padding: 0 10px;
@@ -227,10 +241,12 @@ body{
     width: 100px;
     display: inline-block;
 }
+
 .form-btn{
     display: inline-block;
-    
+    font-family: "mons_med";
 }
+
 .form-container form{
     max-width: 300px;
     padding: 0 20px;
@@ -238,6 +254,7 @@ body{
     top: 100px;
     transition: transform 1s;
 }
+
 form input{
     width: 100%;
     height: 30px;
@@ -245,47 +262,68 @@ form input{
     padding: 0 10px;
     border: 1px soild #ccc;
 }
+
 form .btn{
     width: 100%;
     border: none;
     cursor: pointer;
     margin: 10px 0;
 }
+
 form .btn:focus{
     outline: none;
 }
+
 #LoginForm{
     left: 0px;
+    font-family: "mons_reg";
 }
+
+#LoginForm {
+    left: 0px;
+    font-family: "mons_reg";
+}
+
 #RegForm{
     left: -300px;
+    font-family: "mons_reg";
 }
+
 form a{
     font-size: 12px;
 }
+
 #Indicator{
     width: 100px;
     height: 3px;
     border: none;
-    background: #e1755e;
+    background: #54aaeb;
     margin-top: 8px;
     transform: translateX(100px);
     transition: transform 1s;
 }
+
 .btn{
-    padding: 5px;
-    background: #e1755e;
+    padding: 15px;
+    background: #54aaeb;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
+    font-family: "mons_semibold";
+    color: white;
+    border-radius: 25px;
 }
+
 .forgotpass{
     float: left; padding: 10px; color: blue;
 }
+
 .cboxcontainer{
     float: left; width: 100%;
 }
+
 .cbox{
     width: 12px; float: left;
 }
+
 .cboxlabel{
     font-size: 12px; float: left; margin: 16.5px;
 }
@@ -339,5 +377,28 @@ input:focus{
     margin: 1%;
     padding: 10px;
 }
+
+
+.cart_product .w3-card{
+
+}
+
+.payment{
+    width: 400px;
+    height: 2000px;
+    float: left; 
+    margin: 1%;
+    padding: 10px;
+
+
+}
+
+.payment2{
+    float: left; 
+    position: sticky;
+    top: 0;
+
+}
+
 
 /* color palete #f9fbfc #203961, #a2cdb8, #e1755e, #5d554b */

@@ -20,17 +20,18 @@ function showSlides(){
 }
 
 // FormLogin
+var RegForm = document.getElementById("RegForm");
+var LoginForm = document.getElementById("LoginForm");
+var Indicator = document.getElementById("Indicator");
 
-var div_top = $('.menu').offset().top;
+function register(){
+    LoginForm.style.transform = "translateX(300px)";
+    RegForm.style.transform = "translateX(300px)";
+    Indicator.style.transform = "translateX(0px)";
+}
 
-$(window).scroll(function() {
-    var window_top = $(window).scrollTop() - 0;
-    if (window_top > div_top) {
-        if (!$('.menu').is('.sticky')) {
-            $('.menu').addClass('sticky');
-        }
-    } else {
-        $('.menu').removeClass('sticky');
-    }
-});
-
+function login(){
+    LoginForm.style.transform = "translateX(0px)";
+    RegForm.style.transform = "translateX(0px)";
+    Indicator.style.transform = "translateX(100px)";
+}

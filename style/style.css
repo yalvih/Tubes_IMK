@@ -404,7 +404,6 @@ form a{
 
 
 /* PRODUCT DETAIL */
-/* PRODUCT DETAIL */
 .single-product{
     margin-top: 80px;
 
@@ -496,5 +495,40 @@ input:focus{
     border: 1px solid black;
 }
 
+
+/* PRODUCT REVIEW */
+.product-review{
+    width: 100%;
+}
+.review-container{
+    height: inherit;
+}
+.review-item{
+    height: 220px;
+    margin: 15px;
+}
+.review-person{
+    height: 80px;
+    width: 80px;
+    margin: 0;
+    float: left;
+}
+.imgperson{
+
+}
+.desc{
+    margin-left: 90px;
+    height: 200px;
+    padding: 15px;
+    box-shadow: none;
+}
+.desc h4{
+    margin: 0;
+    margin-bottom: 5px;
+
+}
+.similar-product{
+    
+}
 
 /* color palete #f9fbfc #203961, #a2cdb8, #e1755e, #5d554b */

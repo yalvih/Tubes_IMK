@@ -401,10 +401,32 @@ form a{
     font-size: 12px; float: left; margin: 16.5px;
 }
 
+/* DISCOUNTED ITEM */
+
+.discount{
+    position: relative;
+    color: red;
+}
+.discount:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 50%;
+    right: 0;
+    border-top: 1px solid;
+    border-color: inherit;
+    color: red;
+  
+    -webkit-transform:rotate(-5deg);
+    -moz-transform:rotate(-5deg);
+    -ms-transform:rotate(-5deg);
+    -o-transform:rotate(-5deg);
+    transform:rotate(-5deg);
+  }
 
 
 /* PRODUCT DETAIL */
-/* PRODUCT DETAIL */
+
 .single-product{
     margin-top: 80px;
 
@@ -453,6 +475,7 @@ input:focus{
 }
 
 /* MY CART */
+
 .cart_product{
     width: 1150px;
     padding-right: 5px;
@@ -494,6 +517,58 @@ input:focus{
     width: inherit;
     height: 600px;
     border: 1px solid black;
+}
+
+/* FOOTER */
+
+.footer{
+    width: inherit;
+    height: 200px;
+    background-color: lightgray;
+    bottom: 0;
+    float: left;
+    margin-top: 30px;
+}
+
+.about_axolotl{
+    float: left;
+    width: 30%;
+    height: inherit;
+    margin-left: 25px;
+}
+
+.title_about_axolotl{
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 10px;
+}
+
+.social_media{
+    float: left;
+    width: 30%;
+    height: inherit;
+}
+
+.copyright{
+    float: left;
+    width: 30%;
+    height: inherit;
+}
+
+.copyright h2{
+    font-family: "arcade2";
+}
+
+.social_images{
+    float: left;
+    height: 50px;
+    width: 50px;
+    margin-left: 30px;
+}
+
+.about_axolotl a{
+    margin-left: 50px;
+    margin-bottom: 30px;
 }
 
 

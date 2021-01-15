@@ -110,6 +110,62 @@ body{
     padding: 35px;
 }
 
+/* BREADCRUMBS */
+
+.breadcrumb{
+    padding: 5px;
+    margin-left: 55px;
+    font-family: "mons_reg";
+}
+
+ul.breadcrumbs {
+    margin-top: 50px;
+    list-style: none;
+  }
+  ul.breadcrumbs li {
+    display: inline;
+    font-size: 22px;
+  }
+  ul.breadcrumbs li+li:before {
+    color: black;
+    content: "\00a0";
+  }
+  ul.breadcrumbs li a {
+    color: black;
+    text-decoration: none;
+  }
+  ul.breadcrumbs li a:hover {
+    color: black;
+    text-decoration: underline;
+  }
+
+  ul#menu li {
+    display:inline;
+}
+ul.breadcrumb {
+    padding: 20% 16px;
+    margin-top: 0px;
+    list-style: none;
+    background-color: white;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 30px;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
 /* CAROUSEL */
 
 .web_title{
@@ -165,13 +221,13 @@ body{
     float: left;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .title{
     font-family: "arcade1";
     padding: 30px;
-    padding-left: -30px;
     font-size: 50px;
+    margin-left: -70px;
 }
 
 .itemproduct{
@@ -206,6 +262,19 @@ body{
 .product_detail_price{
     font-family: "mons_reg";
     font-size: 18px;
+    padding-top: 10px;
+}
+
+.fa-star{
+    color: #ebc713;
+}
+
+.rating{
+    font-size: 15px;
+}
+
+.disabled{
+    color: #555;
 }
 
 /* LOGIN */
@@ -412,15 +481,15 @@ input:focus{
     float: left; 
     margin: 1%;
     padding: 10px;
-
-
 }
 
 .payment2{
     float: left; 
     position: sticky;
-    top: 0;
-
+    top: 200px;
+    width: inherit;
+    height: 600px;
+    border: 1px solid black;
 }
 
 

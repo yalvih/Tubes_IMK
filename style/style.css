@@ -91,6 +91,10 @@ body{
     color: #594f8d;
 }
 
+.active{
+    background-color: #0275d8;
+}
+
 /* Content */
 
 .content{
@@ -374,7 +378,7 @@ form a{
 
 .btn{
     padding: 15px;
-    background: #54aaeb;
+    background: #0275d8;
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
     font-family: "mons_semibold";
     color: white;

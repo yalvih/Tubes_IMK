@@ -63,6 +63,14 @@ body{
     float: left;
 }
 
+.sidebar_title a{
+    font-family: "arcade2";
+}
+.sidebar_title:hover{
+    color: #0275d8;
+    transition: 0.3s;
+}
+
 .sidebar h2{
     color: #fff;
     text-transform: uppercase;
@@ -279,6 +287,7 @@ ul.breadcrumb li a:hover {
 .w3-card:hover{
     background-color: rgb(233, 231, 231);
     transition: 0.5s;
+    cursor: pointer;
 }
 
 .product_detail_title{
@@ -305,6 +314,39 @@ ul.breadcrumb li a:hover {
 .disabled{
     color: #555;
 }
+
+/* PAGINATION */
+
+.pagination {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  
+  .pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .1s;
+  }
+  
+  .pagination a.active {
+    background-color: #0275d8;
+    border-radius: 10px;
+    color: white;
+  }
+
+  .pagination a.active:hover {
+    background-color: #0275d8;
+  }
+
+  .pagination a:hover {
+    background-color: lightgray;
+    border-radius: 10px;
+  }
 
 /* LOGIN */
 .account-page{

@@ -50,6 +50,8 @@ body{
     background-image: url("../img/carousel/6.jpg");
 }
 
+
+
 /* SIDEBAR */
 
 .sidebar{
@@ -76,6 +78,11 @@ body{
     font-family: "mons_reg";
     font-size: 16px;
 }
+
+.sidebar li:hover{
+    background-color: #0275d8;
+    transition: 0.4s;
+}
 .sidebar ul li a{
     color: white;
     display: block;
@@ -91,8 +98,21 @@ body{
     color: #594f8d;
 }
 
+.accordion{
+
+}
+
+.accordion_list a{
+    margin-left: 20px;
+}
+
 .active{
     background-color: #0275d8;
+}
+
+.panel{
+    display: none;
+    overflow: hidden;
 }
 
 /* Content */
@@ -254,6 +274,11 @@ ul.breadcrumb li a:hover {
 .w3-card{
     height: 500px;
     /* box-shadow: none; */
+}
+
+.w3-card:hover{
+    background-color: lightgray;
+    transition: 0.5s;
 }
 
 .product_detail_title{
@@ -634,9 +659,10 @@ input:focus{
 
 .review-container{
     height: inherit;
+    margin-left: -15px;
 }
 .review-item{
-    height: 220px;
+    height: 275px;
     margin: 15px;
 }
 .review-person{
@@ -657,7 +683,11 @@ input:focus{
 .desc h4{
     margin: 0;
     margin-bottom: 5px;
+    font-family: "mons_med";
+}
 
+.desc h5, p{
+    font-family: "mons_reg";
 }
 .similar-product p{
     width: 100%;
@@ -667,6 +697,11 @@ input:focus{
 .similar-product img{
     
 
+}
+
+.image_review{
+    max-width: 70px;
+    max-height: 70px;
 }
 
 /* FOOTER */

@@ -14,17 +14,22 @@
             <h2 href="index.html"><a href="index.html">AXOLOTL</a></h2>
             <ul>
                 <li><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
-                <li class="active" ><a href="catalog.html"><i class="fas fa-shopping-bag"></i>SHOP</a></li>
-                <li><a href="#"><i class="fas fa-trophy"></i>NEW ARRIVAL</a></li>
-                <li><a href="#"><i class="fas fa-percent"></i>DISCOUNT</a></li>
-                <li><a href=""><i class="fas fa-list-alt"></i>CATEGORIES</a></li>
+                <li class="active accordion" ><a><i class="fas fa-shopping-bag"></i>SHOP<i class="fas fa-chevron-down" style="float: right;"></i></a></li>
+                <div class="panel">
+                    <ul class="accordion_list">
+                        <li><a href="catalog.html"><i class="fas fa-shopping-bag"></i>ALL ITEMS</a></li>
+                        <li><a href="catalog.html#new_arrival"><i class="fas fa-trophy"></i>NEW ARRIVAL</a></li>
+                        <li><a href="catalog.html#discount"><i class="fas fa-percent"></i>DISCOUNT</a></li>
+                        <li><a href="catalog.html#categories"><i class="fas fa-list-alt"></i>CATEGORIES</a></li>
+                    </ul>
+                </div>
                 <li><a href="cart.html"><i class="fas fa-shopping-cart"></i>MY CART</a></li>
                 <li style="position: fixed;bottom: 0;width: 225px;"><a href="login.html"><i class="fas fa-user"></i>SIGN IN</a></li>
             </ul>
         </div>
         <div class="info single-product w3-container">
             <!-- Wajib Ada dan Lihat Stack Programnya -->
-            <div class="w3-container w3-mobile breadcrumb" style="margin-bottom: 50px;margin-left: 5px;margin-top: -40px;">
+            <div class="w3-container w3-mobile breadcrumb" style="margin-bottom: 50px;margin-left: 30px;margin-top: -40px;">
                 <ul class="breadcrumbs">
                     <li>></li>
                     <li><a href="index.html">Home</a></li>
@@ -40,18 +45,18 @@
             </div>
             <div class="w3-container">
                 <div class="row" >
-                    <div class="single-img w3-padding w3-card" style="margin-right: 30px;">
+                    <div class="single-img w3-padding" style="margin-right: 30px;">
                         <div class="w3-container">
                             <img src="../img/product/c.png" class="imgitemproduct myImage" id="myImg">
                         </div>
-                        <div class="single-img w3-padding w3-card">
-                            <img src="../img/product/c.png" class="imgitemproduct myImage" id="myImg">
+                        <div class="single-img w3-padding">
+                            <img src="../img/product/c1.png" class="imgitemproduct myImage" id="myImg">
                         </div>
-                        <div class="single-img w3-padding w3-card">
-                            <img src="../img/product/c.png" class="imgitemproduct myImage" id="myImg">
+                        <div class="single-img w3-padding">
+                            <img src="../img/product/c2.png" class="imgitemproduct myImage" id="myImg">
                         </div>
-                        <div class="single-img w3-padding w3-card">
-                            <img src="../img/product/c.png" class="imgitemproduct myImage" id="myImg">
+                        <div class="single-img w3-padding">
+                            <img src="../img/product/c3.png" class="imgitemproduct myImage" id="myImg">
                         </div>
                     </div>
                     <!-- The Modal -->
@@ -62,9 +67,11 @@
                     </div>
                     <div class="col-2 product_details">
                         <h1>NZXT H510i Red Casing</h1>
+                        <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 7 Reviews</p>
                         <h4>Rp 1.999.000</h4>
+                        
                         <input type="number" value="1" class="input_number">
-                        <a href="" type="submit" class="btn">Add To Cart <i class="fa fa-shopping-cart"></i></a>
+                        <a href="" type="submit" class="btn" onclick="addedItem()">Add To Cart <i class="fa fa-shopping-cart"></i></a>
     
                         <h3>Product Detail <i class="fa fa-indent"> </i></h3>
                         <br>
@@ -80,37 +87,39 @@
             </div>
             <div class=" info product-review w3-container">
                 <div>
-                    <h3>
-                        Product Review
-                    </h3>
+                    <h3>Product Review</h3>
                     <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 7 reviews</p>
                 </div>
                 <br>
-                <div class="review-container w3-padding w3-card">
+                <div class="review-container">
                     <div class="review-item w3-padding w3-card">
-                        <div class="review-person ">
-                            <img src="../img/person.png" class="imgitemproduct">
+                        <div class="review-person">
+                            <img src="../img/person.png" class="imgitemproduct" style="margin-top: 90px;margin-left: 5px;">
                         </div>
                         
                         <div class="desc w3-card">
-                            <h4>Title</h4>
+                            <h4>Great product, Great Quality, Fast Shipping</h4>
+                            <img src="../img/review/nzxt_1.jpg" class="image_review myImage" style="padding: 5px;">
+                            <img src="../img/review/nzxt_1.jpg" class="image_review myImage" style="padding: 5px;">
                             <p class="product_detail_price rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>  5.0 / 5.0</p>
-                            <h5>Name</h5>
-                            <p>Emejing</p>
+                            <h5>John Doe</h5>
+                            <p>Emejing Product. Would buy again 10/10</p>
                         </div>
 
                     </div>
                     <div class="review-item w3-padding w3-card">
                         <div class="review-person">
-                            <img src="../img/person.png" class="imgitemproduct">
+                            <img src="../img/person.png" class="imgitemproduct" style="margin-top: 90px;margin-left: 5px;">
+                        </div>
+                        
+                        <div class="desc w3-card">
+                            <h4>Another great product from NZXT</h4>
+                            <img src="../img/review/nzxt_4.jpg" class="image_review myImage" style="padding: 5px;">
+                            <p class="product_detail_price rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>  5.0 / 5.0</p>
+                            <h5>T****n</h5>
+                            <p>I watercooled my PC with this product. Then, post it on Reddit and get so many upvotes</p>
                         </div>
 
-                        <div class="desc w3-card">
-                            <h4>Title</h4>
-                            <p class="product_detail_price rating"><i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i> <i class="fas fa-star"></i>  5.0 / 5.0</p>
-                            <h5>Name</h5>
-                            <p>Overall good!! </p>
-                        </div>
                     </div>
                     <div class="w3-container">
                         <a href="">See more <i class="fas fa-angle-double-right"></i></a>
@@ -257,6 +266,22 @@
 </body>
 <script type="text/javascript" src="../js/script.js"></script>
 <script> 
+
+// accordion for sidebar
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 
 // create references to the modal...
 var modal = document.getElementById('myModal');

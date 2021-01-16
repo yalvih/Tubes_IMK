@@ -414,10 +414,6 @@ form .btn:focus{
     outline: none;
 }
 
-#LoginForm{
-    left: 0px;
-    font-family: "mons_reg";
-}
 
 #LoginForm {
     left: 0px;
@@ -425,8 +421,9 @@ form .btn:focus{
 }
 
 #RegForm{
-    left: -300px;
+    left: 300px;
     font-family: "mons_reg";
+    width: 100%;
 }
 
 form a{
@@ -439,7 +436,7 @@ form a{
     border: none;
     background: #54aaeb;
     margin-top: 8px;
-    transform: translateX(100px);
+    transform: translateX(0px);
     transition: transform 1s;
 }
 

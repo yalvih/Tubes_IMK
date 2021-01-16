@@ -183,9 +183,49 @@
                 <div class="payment">
                     <!-- Payment Column -->
                     <div class="payment2">
-                        <p class="product_detail_title"><b>Total Payment</b></p>
-                        <p class="product_detail_price">Rp 17.499.000</p>
-                        <button>BUY</button>
+                        <div class="promo">
+                            <p class="product_detail_title" style="text-align: center;color: white;"><b>Use our 70% discount !</b></p>
+                            <p class="product_detail_price" style="text-align: center;color: white;"><a href="#">Click this link for your promo</a></p>
+                            
+                        </div>
+                        <div class="nota_belanja">
+                            <p class="product_detail_title" style="margin-left: -10px;"><b>Invoice</b></p>
+                            <div class="tg-wrap">
+                                <table >
+                                    <tbody>
+                                        <tr>
+                                            <td><p class="product_detail_price">Total Price</p></td>
+                                            <td><p class="product_detail_price">Rp 17.499.000</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="product_detail_price">Promo</p></td>
+                                            <td><p class="product_detail_price">Rp 0</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="product_detail_price">Shipping</p></td>
+                                            <td><p class="product_detail_price">Rp 300.000</p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>         
+                        </div>
+                        <div class="total_keseluruhan">
+                            <p class="product_detail_title" style="margin-left: -10px;"><b>Total Payment</b></p>
+                            <table >
+                                <tbody>
+                                    <tr>
+                                        <td><p class="product_detail_price">Total Item</p></td>
+                                        <td><p class="product_detail_price">12</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="product_detail_price"><b>Grand Total</b></b></p></td>
+                                        <td><p class="product_detail_price"><b>Rp 17.799.000</b></p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="buy">BUY</button>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
@@ -216,27 +256,25 @@
                 </div>
             </div>
             
-        </div>
-        
-        
+        </div>  
     </div>
 </body>
 <script type="text/javascript" src="../js/script.js"></script>
 <script>
     // accordion for sidebar
-var acc = document.getElementsByClassName("accordion");
-var i;
+    var acc = document.getElementsByClassName("accordion");
+    var i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
     }
-  });
-}
 </script>
 </html>

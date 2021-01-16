@@ -11,14 +11,19 @@
 <body>
     <div class="w3-container" style="padding: 0;height: 100%;">
         <div class="sidebar">
-            <h2 href="index.html"><a href="index.html">AXOLOTL</a></h2>
+            <h2 href="index.html" class="sidebar_title"><a href="index.html">AXOLOTL</a></h2>
             <ul>
-                <li ><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
-                <li  ><a href="catalog.html"><i class="fas fa-shopping-bag"></i>SHOP</a></li>
-                <li><a href="#"><i class="fas fa-trophy"></i>NEW ARRIVAL</a></li>
-                <li><a href="#"><i class="fas fa-percent"></i>DISCOUNT</a></li>
-                <li><a href=""><i class="fas fa-list-alt"></i>CATEGORIES</a></li>
-                <li class="active" ><a href="cart.html"><i class="fas fa-shopping-cart"></i>MY CART</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+                <li class="accordion"><a><i class="fas fa-shopping-bag"></i>SHOP<i class="fas fa-chevron-down" style="float: right;"></i></a></li>
+                <div class="panel">
+                    <ul class="accordion_list">
+                        <li><a href="catalog.html"><i class="fas fa-shopping-bag"></i>ALL ITEMS</a></li>
+                        <li><a href="catalog.html#new_arrival"><i class="fas fa-trophy"></i>NEW ARRIVAL</a></li>
+                        <li><a href="catalog.html#discount"><i class="fas fa-percent"></i>DISCOUNT</a></li>
+                        <li><a href="catalog.html#categories"><i class="fas fa-list-alt"></i>CATEGORIES</a></li>
+                    </ul>
+                </div>
+                <li class="active"><a href="cart.html"><i class="fas fa-shopping-cart"></i>MY CART</a></li>
                 <li style="position: fixed;bottom: 0;width: 225px;"><a href="login.html"><i class="fas fa-user"></i>SIGN IN</a></li>
             </ul>
         </div>
@@ -174,16 +179,65 @@
                             <p ><a href="#" class='w3-btn '>BUY</a></p>
                         </div>
                     </div>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">&raquo;</a>
+                    </div>
                 </div>
                 <div class="payment">
                     <!-- Payment Column -->
                     <div class="payment2">
-                        <p class="product_detail_title"><b>Total Payment</b></p>
-                        <p class="product_detail_price">Rp 17.499.000</p>
-                        <button>BUY</button>
+                        <div class="promo">
+                            <p class="product_detail_title" style="text-align: center;color: white;"><b>Use our 70% discount !</b></p>
+                            <p class="product_detail_price" style="text-align: center;color: white;"><a href="#">Click this link for your promo</a></p>
+                            
+                        </div>
+                        <div class="nota_belanja">
+                            <p class="product_detail_title" style="margin-left: -10px;"><b>Invoice</b></p>
+                            <div class="tg-wrap">
+                                <table >
+                                    <tbody>
+                                        <tr>
+                                            <td><p class="product_detail_price">Total Price</p></td>
+                                            <td><p class="product_detail_price">Rp 17.499.000</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="product_detail_price">Promo</p></td>
+                                            <td><p class="product_detail_price">Rp 0</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td><p class="product_detail_price">Shipping</p></td>
+                                            <td><p class="product_detail_price">Rp 300.000</p></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>         
+                        </div>
+                        <div class="total_keseluruhan">
+                            <p class="product_detail_title" style="margin-left: -10px;"><b>Total Payment</b></p>
+                            <table >
+                                <tbody>
+                                    <tr>
+                                        <td><p class="product_detail_price">Total Item</p></td>
+                                        <td><p class="product_detail_price">12</p></td>
+                                    </tr>
+                                    <tr>
+                                        <td><p class="product_detail_price"><b>Grand Total</b></b></p></td>
+                                        <td><p class="product_detail_price"><b>Rp 17.799.000</b></p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <button class="buy">BUY</button>
+                        </div>
+                        
                     </div>
                 </div>
+                
             </div>
+            
             <div class="footer">
                 <div class="about_axolotl">
                     <h3 class="title_about_axolotl" style="margin-top: 10px; margin-bottom: 10px;">About Axolotl</h3>
@@ -211,10 +265,25 @@
                 </div>
             </div>
             
-        </div>
-        
-        
+        </div>  
     </div>
 </body>
 <script type="text/javascript" src="../js/script.js"></script>
+<script>
+    // accordion for sidebar
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+        panel.style.display = "none";
+        } else {
+        panel.style.display = "block";
+        }
+    });
+    }
+</script>
 </html>

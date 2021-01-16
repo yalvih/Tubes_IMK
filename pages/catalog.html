@@ -11,20 +11,24 @@
 <body>
     <div class="w3-container" style="padding: 0;height: 100%;">
         <div class="sidebar">
-            <h2 href="index.html"><a href="index.html">AXOLOTL</a></h2>
+            <h2 href="index.html" class="sidebar_title"><a href="index.html">AXOLOTL</a></h2>
             <ul>
-                <li ><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
-                <li class="active" ><a href="catalog.html"><i class="fas fa-shopping-bag"></i>SHOP</a></li>
-                <li><a href="#"><i class="fas fa-trophy"></i>NEW ARRIVAL</a></li>
-                <li><a href="#"><i class="fas fa-percent"></i>DISCOUNT</a></li>
-                <li><a href=""><i class="fas fa-list-alt"></i>CATEGORIES</a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+                <li class="active accordion" ><a><i class="fas fa-shopping-bag"></i>SHOP<i class="fas fa-chevron-down" style="float: right;"></i></a></li>
+                <div class="panel">
+                    <ul class="accordion_list">
+                        <li><a href="catalog.html"><i class="fas fa-shopping-bag"></i>ALL ITEMS</a></li>
+                        <li><a href="catalog.html#new_arrival"><i class="fas fa-trophy"></i>NEW ARRIVAL</a></li>
+                        <li><a href="catalog.html#discount"><i class="fas fa-percent"></i>DISCOUNT</a></li>
+                        <li><a href="catalog.html#categories"><i class="fas fa-list-alt"></i>CATEGORIES</a></li>
+                    </ul>
+                </div>
                 <li><a href="cart.html"><i class="fas fa-shopping-cart"></i>MY CART</a></li>
                 <li style="position: fixed;bottom: 0;width: 225px;"><a href="login.html"><i class="fas fa-user"></i>SIGN IN</a></li>
             </ul>
         </div>
         <div class="w3-container content">
             <div class="header">
-
             </div>
             <!-- Wajib Ada dan Lihat Stack Programnya -->
             <div class="w3-container w3-mobile breadcrumb">
@@ -35,11 +39,10 @@
                     <li><a href="#">Shop</a></li>
                 </ul>
             </div>
-            
             <div class="info">
                 <!-- PRODUCT NEW ARRIVAL -->
                 <div class="titleproduct">
-                    <h2 class="title"><b>NEW ARRIVAL</b></h2>
+                    <h2 class="title" id="new_arrival"><b>NEW ARRIVAL</b></h2>
                 </div>
                 <!-- Type new arrival row -->
                 <div class="product">
@@ -66,7 +69,7 @@
                         </div>
                     </div>
                     <!-- Column 3 -->
-                    <div class="itemproduct w3-padding w3-card">
+                    <div class="itemproduct w3-padding w3-card" onclick="window.location='product_details.html'">
                         <div class="image-content">
                             <img src="../img/product/c.png" class="imgitemproduct">
                         </div>
@@ -91,7 +94,7 @@
 
                 <!-- PRODUCT DISCOUNT -->
                 <div class="titleproduct">
-                    <h2 class="title"><b>DISCOUNT</b></h2>
+                    <h2 class="title" id="discount"><b>DISCOUNT</b></h2>
                     <h3 class="title" style="font-size: 35px;padding-top: 0px;margin-top: 0;"><b>Time Remaining: 23h : 9m : 47s</b></h2>
                 </div>
                 <!-- Type Discount row -->
@@ -148,7 +151,7 @@
 
                 <!-- PRODUCT CATEGORIES-->
                 <div class="titleproduct">
-                    <h2 class="title"><b>CATEGORIES</b></h2>
+                    <h2 class="title" id="categories"><b>CATEGORIES</b></h2>
                 </div>
                 <!-- Type Categories row -->
                 <div class="product">
@@ -220,7 +223,7 @@
                         </div>
                     </div>
                     <!-- Column 3 -->
-                    <div class="itemproduct w3-padding w3-card">
+                    <div class="itemproduct w3-padding w3-card" onclick="window.location='product_details.html'">
                         <div class="image-content">
                             <img src="../img/product/c.png" class="imgitemproduct">
                         </div>
@@ -285,6 +288,21 @@
                             <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 1.799 reviews</p>
                         </div>
                     </div>
+                    <div class="pagination">
+                        <a href="#">&laquo;</a>
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a>...</a>
+                        <a href="#">99</a>
+                        <a href="#">Last</a>
+                        <a href="#">&raquo;</a>
+                    </div>
                 </div>
 
             </div>
@@ -318,4 +336,21 @@
     </div>
 </body>
 <script type="text/javascript" src="../js/script.js"></script>
+<script>
+    // accordion for sidebar
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
 </html>

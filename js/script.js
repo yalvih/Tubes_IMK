@@ -35,3 +35,8 @@ function login(){
     RegForm.style.transform = "translateX(0px)";
     Indicator.style.transform = "translateX(100px)";
 }
+
+function addedItem(){
+    alert("Item has been added to cart")
+}
+

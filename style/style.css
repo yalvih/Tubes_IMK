@@ -561,6 +561,9 @@ input:focus{
     margin-left: 0;
 }
 
+.social .social_images{
+    padding-top: 10px;
+}
 /* MODAL */
 
 #myImg {

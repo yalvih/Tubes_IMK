@@ -13,8 +13,8 @@
         <div class="sidebar">
             <h2 href="index.html" class="sidebar_title"><a href="index.html">AXOLOTL</a></h2>
             <ul>
-                <li class="active"><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
-                <li class="accordion"><a><i class="fas fa-shopping-bag"></i>SHOP<i class="fas fa-chevron-down" style="float: right;"></i></a></li>
+                <li><a href="index.html"><i class="fas fa-home"></i>HOME</a></li>
+                <li class="active accordion" ><a><i class="fas fa-shopping-bag"></i>SHOP<i class="fas fa-chevron-down" style="float: right;"></i></a></li>
                 <div class="panel">
                     <ul class="accordion_list">
                         <li><a href="catalog.html"><i class="fas fa-shopping-bag"></i>ALL ITEMS</a></li>
@@ -23,58 +23,43 @@
                         <li><a href="catalog_categories.html"><i class="fas fa-list-alt"></i>CATEGORIES</a></li>
                     </ul>
                 </div>
-                <li ><a href="cart.html"><i class="fas fa-shopping-cart"></i>MY CART</a></li>
+                <li><a href="cart.html"><i class="fas fa-shopping-cart"></i>MY CART</a></li>
                 <li style="position: fixed;bottom: 0;width: 225px;"><a href="login.html"><i class="fas fa-user"></i>SIGN IN</a></li>
             </ul>
         </div>
         <div class="w3-container content">
             <div class="header">
-                <div class="carousel-container">
-                    <div class = "images slides">
-                        <div class="carousel-content">
-                        </div>
-                        <img src="../img/carousel/1.png" class="image_carousel">
-                        <div class="web_title"><span class="w3-color-white w3-flat-silver w3-padding">Axolotl</span></div>
-                        <div class="web_subtitle"><span class="w3-color-white w3-flat-silver w3-padding">A Tech E-Commerce</span></div>
-                    </div>
-                    <div class = "images slides">
-                        <div class="carousel-content">
-                        </div>
-        
-                        <img src="../img/carousel/2.png" class="image_carousel">
-                        <div class="web_title"><span class="w3-color-white w3-flat-silver w3-padding">Axolotl</span></div>
-                        <div class="web_subtitle"><span class="w3-color-white w3-flat-silver w3-padding">A Tech E-Commerce</span></div>
-                    </div>
-                    <div class = "images slides">
-                        <div class="carousel-content">
-                        </div>
-                        <img src="../img/carousel/3.jpg" class="image_carousel">
-                        <div class="web_title"><span class="w3-color-white w3-flat-silver w3-padding">Axolotl</span></div>
-                        <div class="web_subtitle"><span class="w3-color-white w3-flat-silver w3-padding">A Tech E-Commerce</span></div>
-                    </div>
-                    <div class = "images slides">
-                        <div class="carousel-content">
-                        </div>
-                        <img src="../img/carousel/4.png" class="image_carousel">
-                        <div class="web_title"><span class="w3-color-white w3-flat-silver w3-padding">Axolotl</span></div>
-                        <div class="web_subtitle"><span class="w3-color-white w3-flat-silver w3-padding">A Tech E-Commerce</span></div>
-                    </div>
-                    <div class = "images slides">
-                        <div class="carousel-content">
-                        </div>
-                        <img src="../img/carousel/5.jpg" class="image_carousel">
-                        <div class="web_title"><span class="w3-color-white w3-flat-silver w3-padding">Axolotl</span></div>
-                        <div class="web_subtitle"><span class="w3-color-white w3-flat-silver w3-padding">A Tech E-Commerce</span></div>
-                    </div>
-                    
-                </div>
             </div>
+            <!-- Wajib Ada dan Lihat Stack Programnya -->
+            <div class="w3-container w3-mobile breadcrumb">
+                <ul class="breadcrumbs">
+                    <li>></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li>/</li>
+                    <li><a href="catalog.html">Shop</a></li>
+                    <li>/</li>
+                    <li><a href="#">New Arrival</a></li>
+                </ul>
+            </div>
+            
             <div class="info">
-                <!-- PRODUCT -->
+                <!-- PRODUCT NEW ARRIVAL -->
                 <div class="titleproduct">
-                    <h2 class="title"><b>NEW ARRIVAL</b></h2>
+                    <h2 class="title" id="new_arrival"><b>NEW ARRIVAL</b></h2>
                 </div>
-                <!-- Type 1 row -->
+                <!-- Fitur Sorting Filter-->
+                <div class="dropdown">
+                    <button class="dropbtn">Filter By
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Cheapest</a>
+                        <a href="#">Most Expensive</a>
+                        <a href="#">A..Z</a>
+                        <a href="#">Z..A</a>
+                    </div>
+                </div> 
+                <!-- Type new arrival row -->
                 <div class="product">
                     <!-- Column 1 -->
                     <div class="itemproduct w3-padding w3-card" >
@@ -120,50 +105,21 @@
                             <p class="product_detail_price rating"><i class="fas fa-star"></i> 4.1 / 5.0 <b>|</b> 3 reviews</p>
                         </div>
                     </div>
-                    <!-- Column 1 -->
-                    <div class="itemproduct w3-padding w3-card" >
-                        <div class="image-content">
-                            <img src="../img/product/e.png" class="imgitemproduct">
-                        </div>
-                        <div class="product_detail">
-                            <p class="product_detail_title"><b>XMG APEX 15</b></p>
-                            <p class="product_detail_price">Rp 18.499.000</p>
-                            <p class="product_detail_price rating">No Rating Yet</p>
-                        </div>
-                    </div>
-                    <!-- Column 2 -->
-                    <div class="itemproduct w3-padding w3-card">
-                        <div class="image-content">
-                            <img src="../img/product/f.png" class="imgitemproduct">
-                        </div>
-                        <div class="product_detail">
-                            <p class="product_detail_title"><b>MSI X570 Tomahawk Wi-Fi</b></p>
-                            <p class="product_detail_price">Rp 3.999.000</p>
-                            <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 192 reviews</p>
-                        </div>
-                    </div>
-                    <!-- Column 3 -->
-                    <div class="itemproduct w3-padding w3-card">
-                        <div class="image-content">
-                            <img src="../img/product/g.png" class="imgitemproduct">
-                        </div>
-                        <div class="product_detail">
-                            <p class="product_detail_title"><b>ASUS ROG GL753</b></p>
-                            <p class="product_detail_price">Rp 15.699.000</p>
-                            <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 98 reviews</p>
-                        </div>
-                    </div>
-                    <!-- Column 4 -->
-                    <div class="itemproduct w3-padding w3-card">
-                        <div class="image-content" style="margin-top: 40px;margin-bottom: -40px;">
-                            <img src="../img/product/h.png" class="imgitemproduct">
-                        </div>
-                        <div class="product_detail">
-                            <p class="product_detail_title"><b>Ryzen 5 5600X</b></p>
-                            <p class="product_detail_price">Rp 5.199.000</p>
-                            <p class="product_detail_price rating"><i class="fas fa-star"></i> 5.0 / 5.0 <b>|</b> 1.799 reviews</p>
-                        </div>
-                    </div>
+                </div>
+                <div class="pagination">
+                    <a href="#">&laquo;</a>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a>...</a>
+                    <a href="#">99</a>
+                    <a href="#">Last</a>
+                    <a href="#">&raquo;</a>
                 </div>
             </div>
             <div class="footer">
@@ -193,7 +149,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
 </body>
 <script type="text/javascript" src="../js/script.js"></script>

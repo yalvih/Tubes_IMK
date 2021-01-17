@@ -18,9 +18,9 @@
                 <div class="panel">
                     <ul class="accordion_list">
                         <li><a href="catalog.html"><i class="fas fa-shopping-bag"></i>ALL ITEMS</a></li>
-                        <li><a href="catalog.html#new_arrival"><i class="fas fa-trophy"></i>NEW ARRIVAL</a></li>
-                        <li><a href="catalog.html#discount"><i class="fas fa-percent"></i>DISCOUNT</a></li>
-                        <li><a href="catalog.html#categories"><i class="fas fa-list-alt"></i>CATEGORIES</a></li>
+                        <li><a href="catalog_new_arrival.html"><i class="fas fa-trophy"></i>NEW ARRIVAL</a></li>
+                        <li><a href="catalog_discount.html"><i class="fas fa-percent"></i>DISCOUNT</a></li>
+                        <li><a href="catalog_categories.html"><i class="fas fa-list-alt"></i>CATEGORIES</a></li>
                     </ul>
                 </div>
                 <li><a href="cart.html"><i class="fas fa-shopping-cart"></i>MY CART</a></li>
@@ -36,27 +36,16 @@
                     <li>></li>
                     <li><a href="index.html">Home</a></li>
                     <li>/</li>
-                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">All Items</a></li>
                 </ul>
             </div>
             
             <div class="info">
                 <!-- PRODUCT NEW ARRIVAL -->
-                <div class="titleproduct">
+                <div class="titleproduct" onclick="window.location='catalog_new_arrival.html'">
                     <h2 class="title" id="new_arrival"><b>NEW ARRIVAL</b></h2>
                 </div>
-                <!-- Fitur Sorting Filter-->
-                <div class="dropdown">
-                    <button class="dropbtn">Filter By
-                        <i class="fa fa-caret-down"></i>
-                    </button>
-                    <div class="dropdown-content">
-                        <a href="#">Cheapest</a>
-                        <a href="#">Most Expensive</a>
-                        <a href="#">A..Z</a>
-                        <a href="#">Z..A</a>
-                    </div>
-                </div> 
+                
                 <!-- Type new arrival row -->
                 <div class="product">
                     <!-- Column 1 -->
@@ -106,7 +95,7 @@
                 </div>
 
                 <!-- PRODUCT DISCOUNT -->
-                <div class="titleproduct">
+                <div class="titleproduct" onclick="window.location='catalog_discount.html'">
                     <h2 class="title" id="discount"><b>DISCOUNT</b></h2>
                     <h3 class="title" style="font-size: 35px;padding-top: 0px;margin-top: 0;"><b>Time Remaining: 23h : 9m : 47s</b></h2>
                 </div>
@@ -163,7 +152,7 @@
                 </div>
 
                 <!-- PRODUCT CATEGORIES-->
-                <div class="titleproduct">
+                <div class="titleproduct" onclick="window.location='catalog_categories.html'">
                     <h2 class="title" id="categories"><b>CATEGORIES</b></h2>
                 </div>
                 <!-- Type Categories row -->
@@ -207,9 +196,21 @@
                 </div>
 
                 <!-- SHOP -->
-                <div class="titleproduct">
+                <div class="titleproduct" onclick="window.location='catalog.html'">
                     <h2 class="title"><b>SHOP</b></h2>
                 </div>
+                <!-- Fitur Sorting Filter-->
+                <div class="dropdown">
+                    <button class="dropbtn">Filter By
+                        <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="#">Cheapest</a>
+                        <a href="#">Most Expensive</a>
+                        <a href="#">A..Z</a>
+                        <a href="#">Z..A</a>
+                    </div>
+                </div> 
 
                 <!-- Type SHOP -->
                 <div class="product">

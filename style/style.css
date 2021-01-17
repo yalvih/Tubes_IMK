@@ -218,6 +218,8 @@ body{
     padding: 35px;
 }
 
+
+
 /* BREADCRUMBS */
 
 .breadcrumb{
@@ -330,7 +332,13 @@ ul.breadcrumb li a:hover {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 30px;
+    
 }
+
+.titleproduct h2{
+    cursor: pointer;
+}
+
 .title{
     font-family: "arcade1";
     padding: 30px;

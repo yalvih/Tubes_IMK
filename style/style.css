@@ -834,4 +834,38 @@ tr td{
 }
 
 
+
+/* ABOUTPAGE */
+.about{
+    min-width: 800px;
+    min-width: 800px;
+}
+.itemabout{
+    width: 21%; 
+    float: left;
+    margin-left: 16%;
+    margin-right: 9%;
+    margin-bottom: 3%;
+    padding: 10px;
+}
+.itemabout2{
+    width: 20.8%; 
+    float: left;
+    margin: 5%;
+    margin-left: 5.4%;
+
+}
+.descabout{
+    min-width: 800px;
+    min-width: 800px;
+    margin-bottom: 2%;
+    margin-right: 10%;
+    margin-left: 5%;
+}
+.titleaboutus{
+    font-family: "arcade1";
+    margin-bottom: 20px;
+    font-size: 50px;
+
+}
 /* color palete #f9fbfc #203961, #a2cdb8, #e1755e, #5d554b */
